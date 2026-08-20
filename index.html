@@ -11,6 +11,9 @@
 <meta property="og:title" content="MonoNotes — encrypted notes for Android">
 <meta property="og:description" content="Everything is encrypted on your phone. This page says precisely how, and what the server holds.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://alibs01.github.io/icon.png">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
 :root {
     --bg: #ffffff;
@@ -79,22 +82,11 @@ p:last-child { margin-bottom: 0; }
     text-decoration: none;
 }
 .mark {
-    width: 22px; height: 22px;
-    border: 1.5px solid var(--fg);
-    border-radius: 6px;
+    width: 24px;
+    height: 24px;
     display: block;
-    position: relative;
     flex: none;
 }
-.mark::before, .mark::after {
-    content: "";
-    position: absolute;
-    left: 4px;
-    height: 1.5px;
-    background: var(--fg);
-}
-.mark::before { top: 6px; width: 11px; }
-.mark::after  { top: 11px; width: 7px; }
 
 nav { display: flex; gap: 22px; font-size: 14.5px; }
 nav a { color: var(--muted); text-decoration: none; }
@@ -212,7 +204,7 @@ footer a:hover { border-bottom-color: var(--muted); }
 
 <header class="top">
     <div class="wrap">
-        <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span>MonoNotes</a>
+        <a class="brand" href="#top"><img class="mark" src="icon.png" width="24" height="24" alt="" aria-hidden="true">MonoNotes</a>
         <nav>
             <a href="#app">The app</a>
             <a href="#encryption">Encryption</a>
@@ -383,7 +375,7 @@ footer a:hover { border-bottom-color: var(--muted); }
     <div class="wrap">
         <p class="eyebrow">Support</p>
         <h2>Talk to a person</h2>
-        <p class="lede">MonoNotes is made by Monolith Labs. Mail reaches the developer directly, in English or Turkish, and bug reports are read.</p>
+        <p class="lede">MonoNotes is made by Monolithic Labs. Mail reaches the developer directly, in English or Turkish, and bug reports are read.</p>
         <p><a class="btn ghost" href="mailto:monolithlabs.dev@gmail.com?subject=MonoNotes">monolithlabs.dev@gmail.com</a></p>
         <p class="note">Crash reports and anonymous counts &mdash; how often a note is created, whether a sync succeeded &mdash; are collected in order to find bugs. No note text can travel with them: the events are a fixed list of names whose parameters may only be numbers and true/false, so there is no channel for text to pass through.</p>
     </div>
@@ -398,7 +390,7 @@ footer a:hover { border-bottom-color: var(--muted); }
             <a href="https://sites.google.com/view/monolithlabs/mononotes/terms-of-use">Terms of Use</a>
             <a href="https://play.google.com/store/apps/details?id=com.monolithlabs.mononotes">Google Play</a>
         </div>
-        <p>&copy; 2026 Monolith Labs &middot; page last reviewed August 2026</p>
+        <p>&copy; 2026 Monolithic Labs &middot; page last reviewed August 2026</p>
     </div>
 </footer>
 
