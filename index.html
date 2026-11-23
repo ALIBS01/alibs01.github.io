@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MonoNotes — encrypted notes for Android</title>
-<meta name="description" content="MonoNotes is an Android notes app that encrypts everything on the device. This page explains exactly how the encryption works and what the sync server can and cannot see.">
+<title>MonoNotes — encrypted notes</title>
+<meta name="description" content="MonoNotes is a notes app for iPhone and Android that encrypts everything on the device. This page explains exactly how the encryption works and what the sync server can and cannot see.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="MonoNotes — encrypted notes for Android">
+<meta property="og:title" content="MonoNotes — encrypted notes">
 <meta property="og:description" content="Everything is encrypted on your phone. This page says precisely how, and what the server holds.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://alibs01.github.io/icon.png">
@@ -220,8 +220,9 @@ footer a:hover { border-bottom-color: var(--muted); }
 <section class="hero">
     <div class="wrap">
         <h1>Your notes are unreadable to everyone else.<br>Including us.</h1>
-        <p>MonoNotes is a notes app for Android. What you write is encrypted on your phone, and if you turn on cloud sync it is encrypted <em>before</em> it leaves. The server that stores your notes holds nothing it can open.</p>
+        <p>MonoNotes is a notes app for iPhone and Android. What you write is encrypted on your phone, and if you turn on cloud sync it is encrypted <em>before</em> it leaves. The server that stores your notes holds nothing it can open.</p>
         <div class="cta">
+            <a class="btn solid" href="https://apps.apple.com/app/id6834769280">Download on the App Store</a>
             <a class="btn solid" href="https://play.google.com/store/apps/details?id=com.monolithlabs.mononotes">Get it on Google Play</a>
             <a class="btn ghost" href="#encryption">How the encryption works</a>
         </div>
@@ -259,7 +260,7 @@ footer a:hover { border-bottom-color: var(--muted); }
         <div class="spec">
             <dl>
                 <div><dt>On-device database</dt><dd>SQLCipher, AES-256, whole file, with SQLCipher&rsquo;s per-page HMAC for integrity.</dd></div>
-                <div><dt>On-device key</dt><dd>256 random bits generated at first launch, held in the OS keystore (Android Keystore, through <code>expo-secure-store</code>). It is never uploaded, in any form.</dd></div>
+                <div><dt>On-device key</dt><dd>256 random bits generated at first launch, held in the OS keystore (the iOS Keychain or the Android Keystore, through <code>expo-secure-store</code>). It is never uploaded, in any form.</dd></div>
                 <div><dt>Sync key</dt><dd>A separate 256-bit key, generated on your device when the account is created.</dd></div>
                 <div><dt>Note text</dt><dd>Titles, bodies, folder names, tag names and task text: AES-256-CBC with a random IV per value, encrypted on the device.</dd></div>
                 <div><dt>Attachments</dt><dd>AES-256-GCM, random IV per file, authentication tag stored alongside the ciphertext.</dd></div>
@@ -367,7 +368,7 @@ footer a:hover { border-bottom-color: var(--muted); }
                 </ul>
             </div>
         </div>
-        <p class="note">Prices appear inside the app in your own currency, monthly or yearly, and are cancelled through Google Play like any other subscription. A plan that lapses never locks you out of your own writing: you can still sign in, download your backup, and delete your account.</p>
+        <p class="note">Prices appear inside the app in your own currency, monthly or yearly, and are cancelled through the App Store or Google Play like any other subscription. A plan that lapses never locks you out of your own writing: you can still sign in, download your backup, and delete your account.</p>
     </div>
 </section>
 
@@ -388,9 +389,10 @@ footer a:hover { border-bottom-color: var(--muted); }
         <div class="foot-links">
             <a href="https://sites.google.com/view/monolithlabs/mononotes/privacy-policy">Privacy Policy</a>
             <a href="https://sites.google.com/view/monolithlabs/mononotes/terms-of-use">Terms of Use</a>
+            <a href="https://apps.apple.com/app/id6834769280">App Store</a>
             <a href="https://play.google.com/store/apps/details?id=com.monolithlabs.mononotes">Google Play</a>
         </div>
-        <p>&copy; 2026 Monolithic Labs &middot; page last reviewed August 2026</p>
+        <p>&copy; 2026 Monolithic Labs &middot; page last reviewed November 2026</p>
     </div>
 </footer>
 
